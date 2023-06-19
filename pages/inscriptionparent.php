@@ -20,17 +20,17 @@
         <h2 class="ad">
         INSCRIRE UN PARENT
         </h2>
-    </div>
+      </div>
+      <div class="user-box">
+        <input type="text" name=""  required>
+        <label>Nom complet</label>
+      </div>
+      <div class="user-box">
+        <input name="" type="email"  required>
+        <label>E-mail</label>
+      </div>
     <div class="user-box">
-      <input required="" name="" type="text">
-      <label>Nom complet</label>
-    </div>
-    <div class="user-box">
-      <input required="" name="" type="email">
-      <label>E-mail</label>
-    </div>
-    <div class="user-box">
-      <input required="" name="" type="password">
+      <input name="" type="password" required>
       <label>Mot de passe</label>
     </div>
     <a href="pageadmin.php">
@@ -43,6 +43,6 @@
   </form>
   <p>Don't have an account? <a href="" class="a2">Sign up!</a></p>
 </div>
-    </div>  
+  
 </body>
 </html>

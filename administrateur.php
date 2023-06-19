@@ -1,5 +1,5 @@
 <?php
-include('connexion_base.php');
+// include('connexion_base.php');
 $msg_success = "";
 $msg = "";
 
@@ -32,6 +32,7 @@ if(isset($_POST['administrer'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/stylA.css">
     <title>Administrateur</title>
+
 </head>
 <body>
     <div class="container">
@@ -42,7 +43,7 @@ if(isset($_POST['administrer'])){
                 </div>
                 <div>
                     <h2 class="ad">
-                        INSCRIPTION-ADMIN
+                        CONNEXION
                     </h2>
                 </div>
                 <div class="user-box">
@@ -57,18 +58,23 @@ if(isset($_POST['administrer'])){
                     <input type="password" name="mot_pass" required="">
                     <label>Password</label>
                 </div>
+                <div class="user-box">
+                    <input type="usertype" name="-" required="">
+                    <label>--sélectionnez le type--</label>
+                    <option value="user">utilisateur</option>
+                    <option value="admin">administrateur</option>
+                    <option value="parent">parent</option>
+                </div>
                 <center>
-                    <button type="submit" name="administrer">
-                        S'inscrire
-                    </button>
+                    <a href="login.php">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Se connecter
+                    </a>
                 </center>
             </form>
-            <center>
-                <a href="login.php">
-                    Se connecter
-                    <span></span>
-                </a>
-            </center>
         </div>
     </div>
     <?php

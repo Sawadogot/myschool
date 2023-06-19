@@ -11,7 +11,7 @@
 <body>
     <div class="container">
     <div class="login-box" style="margin-top: 30px;">
- <form>
+ <form method='Pageadmin.php' action='POST'>
     <div>
     <img class="logo" src="../images/MySchool.png" alt="" heigth="120" width="120">
     </div>
@@ -32,18 +32,18 @@
      <input type="date" name="datenaissance" id="datenaissance" required="">
    </div>
    <div class="user-box">
-     <input type="text" name="classe" id="classe" required="">
+     <input type="number" name="classe" id="classe" required="">
      <label>Classe</label>
    </div>
    <div class="user-box">
      <input type="text" name="idparent" id="idparent" required="">
      <label>ID Parent</label>
    </div><center>
-     <a href="login.php"> <span></span>
+     <a href="pageadmin.php"> <span></span>
       <span></span>
       <span></span>
       <span></span>
-      S'inscrire
+      Inscrire
      </a>
    </center>
  </form>
