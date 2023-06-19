@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/stylA.css">
     <title>Document</title>
-</head>
-<style>
+    <style>
 body {
     font-family: "Open Sans", sans-serif;
     line-height: 1.25;
@@ -45,6 +45,7 @@ body {
     text-overflow: ellipsis;
   }
 </style>
+</head>
 <body>
 <table>
   <caption>LISTE DES ELEVES</caption>

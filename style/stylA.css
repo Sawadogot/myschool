@@ -1,6 +1,6 @@
 .login-box {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   width: 400px;
   padding: 40px;
@@ -46,7 +46,7 @@
   font-size: 12px;
 }
 
-.login-box form button {
+.login-box form a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -60,7 +60,7 @@
   letter-spacing: 4px
 }
 
-.login-box button:hover {
+.login-box a:hover {
   background: #ffbc04;
   color: #fff;
   border-radius: 5px;
@@ -70,7 +70,7 @@
               0 0 100px #ffbc04;
 }
 
-.login-box button span {
+.login-box a span {
   position: absolute;
   display: block;
 }
@@ -85,13 +85,15 @@
   }
 }
 
-.login-box button span:nth-child(1) {
+.login-box a span:nth-child(1) {
   bottom: 2px;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #ffbc04);
+  background: linear-gradient(360deg, transparent, #ffbc04);
   animation: btn-anim1 2s linear infinite;
+  animation-delay: 1.125s
+  
 }
 /* .ins{
   color: #ffbc04;

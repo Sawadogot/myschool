@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/stylA.css">
+    <link rel="stylesheet" href="../style/stylA.css">
+    <!-- <link rel="stylesheet" href="../style/bootstrap-5.2.3-dist/css/bootstrap.min.css"> -->
     <title>Administrateur</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
     <div class="login-box" style="margin-top: 30px;">
  <form>
     <div>
-    <img class="logo" src="images/MySchool.png" alt="" heigth="120" width="120">
+    <img class="logo" src="../images/MySchool.png" alt="" heigth="120" width="120">
     </div>
     <div>
         <h2 class="ad">
@@ -38,9 +39,11 @@
      <input type="text" name="idparent" id="idparent" required="">
      <label>ID Parent</label>
    </div><center>
-     <a href="login.php" type="submit">
+     <a href="login.php"> <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
       S'inscrire
-        <span></span>
      </a>
    </center>
  </form>

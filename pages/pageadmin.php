@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/styl.css">
+    <link rel="stylesheet" href="../style/styleC.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,16 +11,16 @@
   <p class="p1">WELCOME TO MYSCHOOL ADMIN</p>
   <form>
     <div class="user-box3">
-      <button>Inscription élève</button>
+    <a href="inscriptioneleve.php">Inscription élève</a>
     </div>
     <div class="user-box3">
-      <button>Inscription parent</button>
+    <a href="inscriptionparent.php">Inscription parent</a>
     </div>
     <div class="user-box3">
-      <button>Liste élève</button>
+    <a href="listeeleve.php">Liste élève</a>
     </div>
     <div class="user-box3">
-      <button>Liste parent</button>
+    <a href="Listesparent.php">Liste parent</a>
     </div>
   </form>
 </div>
