@@ -4,13 +4,13 @@ $msg_success = "";
 $msg = "";
 
 if(isset($_POST['administrer'])){
-    $nom_complet = $_POST['nom_complet'];
+    $nom = $_POST['nom'];
     $email = $_POST['email'];
     $mot_passe = $_POST['mot_passe'];
 
-    $query = "INSERT INTO administrateur (nom_complet, email, mot_passe) VALUES (:nom_complet,:email, :mot_passe)";
+    $query = "INSERT INTO administrateur (nom, email, mot_passe) VALUES (:nom,:email, :mot_passe)";
     $query_run = $conn->prepare($query);
-    $query_run->bindParam(':nom_complet', $nom_complet);
+    $query_run->bindParam(':nom', $nom);
     $query_run->bindParam(':email', $email);
     $query_run->bindParam(':mot_passe', $mot_passe);
 
@@ -55,14 +55,14 @@ if(isset($_POST['administrer'])){
                 </div>
                 <div class="user-box">
                     <input type="password" name="mot_pass" required="">
-                    <label>Mot de passe</label>
+                    <label>Mot de Passe</label>
                 </div>
                 <div class="user-box">
-                <select name="type">
-          <option value="">-- Sélectionnez le type --</option>
-          <option value="admin">administrateur</option>
-          <option value="secretaire">sécrétaire</option>
-        </select>
+                    <input type="usertype" name="-" required="">
+                    <label>--sélectionnez le type--</label>
+                    <option value="user">utilisateur</option>
+                    <option value="admin">administrateur</option>
+        
                 </div>
                 <center>
                     <a href="pages/pageadmin.php">
