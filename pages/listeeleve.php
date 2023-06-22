@@ -46,8 +46,15 @@ body {
   }
 </style>
 </head>
-<body>
-<table>
+    <body>
+    <?php
+// Données des élèves
+$eleves = array(
+    array('N' => 1, 'Nom' => 'cissé', 'Prénom(s)' => 'amadou', 'Date de naissance' => '10-08-1997', 'Classe' => 5, 'Trimestre' => 'ajout trimestre', 'Id parent' => 'BARRY')
+);
+
+// Générer le code HTML de la table
+$html = '<table>
   <caption>LISTE DES ELEVES</caption>
   <thead>
     <tr>
@@ -60,17 +67,26 @@ body {
       <th scope="col">Id parent</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-        <td>1</td>
-        <td>cissé</td>
-        <td>amadou</td>
-        <td>10-08-1990</td>
-        <td>5ème</td>
-        <td>ajout trimestre</td>
-        <td>DIAKITE</td>
-    </tr>
-  </tbody>
-</table>
+  <tbody>';
+
+foreach ($eleves as $eleve) {
+    $html .= '<tr>';
+    $html .= '<td>' . $eleve['N'] . '</td>';
+    $html .= '<td>' . $eleve['Nom'] . '</td>';
+    $html .= '<td>' . $eleve['Prénom(s)'] . '</td>';
+    $html .= '<td>' . $eleve['Date de naissance'] . '</td>';
+    $html .= '<td>' . $eleve['Classe'] . '</td>';
+    $html .= '<td>' . $eleve['Trimestre'] . '</td>';
+    $html .= '<td>' . $eleve['Id parent'] . '</td>';
+    $html .= '</tr>';
+}
+
+$html .= '</tbody>
+</table>';
+
+// Afficher la table
+echo $html;
+?>
+
 </body>
 </html>

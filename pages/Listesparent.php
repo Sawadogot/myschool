@@ -46,7 +46,14 @@ body {
   }
 </style>
 <body>
-<table>
+<?php
+// Données des parents
+$parents = array(
+    array('Id parent' => 1, 'Nom complet' => 'cissé amadou', 'E-mail' => 'a75588@gmail.com', 'Mot de passe' => '10081990')
+);
+
+// Générer le code HTML de la table
+$html = '<table>
   <caption>LISTE DES PARENT</caption>
   <thead>
     <tr>
@@ -56,14 +63,23 @@ body {
       <th scope="col">Mot de passe</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-        <td>1</td>
-        <td>cissé amadou</td>
-        <td>a75588@gmail.com</td>
-        <td>10081990</td>
-    </tr>
-  </tbody>
-</table>
+  <tbody>';
+
+foreach ($parents as $parent) {
+    $html .= '<tr>';
+    $html .= '<td>' . $parent['Id parent'] . '</td>';
+    $html .= '<td>' . $parent['Nom complet'] . '</td>';
+    $html .= '<td>' . $parent['E-mail'] . '</td>';
+    $html .= '<td>' . $parent['Mot de passe'] . '</td>';
+    $html .= '</tr>';
+}
+
+$html .= '</tbody>
+</table>';
+
+// Afficher la table
+echo $html;
+?>
+
 </body>
 </html>

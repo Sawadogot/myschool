@@ -54,8 +54,61 @@
                 /* 0 0 50px #ffbc04, */
                 0 0 100px #fdfdfd;
   }
+  header {
+  background-color: yellow;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: #ccc;
+}
+
+
     </style>
 </head>
+<header>
+  <nav>
+    <div class="logo">
+      <img src="../images/MySchool.png" alt="" height="120" width="120">
+    </div>
+    <ul class="menu">
+      <li><a href="listeeleve.php">Ajouter une moyenne</a></li>
+      <li><a href="administrateur.php">Déconnexion</a></li>
+    </ul>
+  </nav>
+</header>
+
 <body>
 <div class="login-box2">
   <form>

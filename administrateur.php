@@ -1,5 +1,5 @@
 <?php
- include('connexion_base.php');
+include('connexion_base.php');
 $msg_success = "";
 $msg = "";
 
@@ -32,15 +32,14 @@ if(isset($_POST['administrer'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/stylA.css">
     <title>Administrateur</title>
-
 </head>
 <body>
     <div class="container">
         <div class="login-box">
             <form method="POST" action="">
-                <div>
-                    <img class="logo" src="images/MySchool.png" alt="" height="120" width="120">
-                </div>
+            <div>
+    <img class="logo" src="images/MySchool.png" alt="" height="120" width="120">
+</div>
                 <div>
                     <h2 class="ad">
                         CONNEXION
@@ -60,7 +59,7 @@ if(isset($_POST['administrer'])){
                 </div>
                 <div class="user-box">
                 <select name="type">
-          <option value="">-- Sélectionnez --</option>
+          <option value="">-- Sélectionnez le type --</option>
           <option value="admin">administrateur</option>
           <option value="secretaire">sécrétaire</option>
         </select>

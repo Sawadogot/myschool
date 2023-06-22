@@ -153,8 +153,7 @@
 <body>
     <div class="container">
     <div class="login-box">
-    
- <form>
+ <form method='listeeleve.php' action='POST'>
     <div>
     <img class="logo" src="../images/MySchool.png" alt="" heigth="120" width="120">
     </div>
