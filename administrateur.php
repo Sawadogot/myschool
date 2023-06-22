@@ -1,5 +1,5 @@
 <?php
-// include('connexion_base.php');
+ include('connexion_base.php');
 $msg_success = "";
 $msg = "";
 
@@ -56,17 +56,17 @@ if(isset($_POST['administrer'])){
                 </div>
                 <div class="user-box">
                     <input type="password" name="mot_pass" required="">
-                    <label>Password</label>
+                    <label>Mot de passe</label>
                 </div>
                 <div class="user-box">
-                    <input type="usertype" name="-" required="">
-                    <label>--sélectionnez le type--</label>
-                    <option value="user">utilisateur</option>
-                    <option value="admin">administrateur</option>
-                    <option value="parent">parent</option>
+                <select name="type">
+          <option value="">-- Sélectionnez --</option>
+          <option value="admin">administrateur</option>
+          <option value="secretaire">sécrétaire</option>
+        </select>
                 </div>
                 <center>
-                    <a href="login.php">
+                    <a href="pages/pageadmin.php">
                         <span></span>
                         <span></span>
                         <span></span>
