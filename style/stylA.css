@@ -5,7 +5,7 @@
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0, 2, 29, 0.987);
+  background: rgba(246, 247, 250, 0.987);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 2, 29, 0.987);
   border-radius: 10px;
@@ -19,14 +19,14 @@
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #4f4d4d;
   margin-bottom: 10px;
   border-radius: 10px;
   border-bottom: 1px solid #fff;
   outline: none;
-  background: rgb(209, 201, 201);
+  background:rgb(119, 155, 239);
+  /* #fff; */
 }
-
 
 .login-box .user-box label {
   position: absolute;
@@ -34,7 +34,7 @@
   left: 10px;
   padding: 10px 0;
   font-size: 17px;
-  color: #fff;
+  color: #ffffff;
   pointer-events: none;
   transition: .5s;
 }
@@ -51,7 +51,7 @@
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #0a0505;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -62,13 +62,13 @@
 }
 
 .login-box a:hover {
-  background: #ffbc04;
-  color: #fff;
+  background: #210af1;
+  color: #fffcfc;
   border-radius: 5px;
-  box-shadow: 0 0 5px #ffbc04,
-              0 0 25px #ffbc04,
-              0 0 50px #ffbc04,
-              0 0 100px #ffbc04;
+  box-shadow: 0 0 5px #16e0eb,
+              0 0 25px #16e0eb,
+              0 0 50px #16e0eb,
+              0 0 100px #16e0eb;
 }
 
 .login-box a span {
@@ -87,11 +87,12 @@
 }
 
 .login-box a span:nth-child(1) {
+  color: black;
   bottom: 2px;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(360deg, transparent, #ffbc04);
+  background: linear-gradient(360deg, transparent, #1818ff);
   animation: btn-anim1 2s linear infinite;
   animation-delay: 1.125s
   
@@ -104,7 +105,7 @@
 .ad:nth-child(1){
   position: relative;
   bottom: 50px;
-  color: #ffbc04;
+  color: #6fc4f2;
   text-align: center;
   background: linear-gradient(90deg, transparent,);
   animation: btn-anim1 linear infinite;
@@ -120,3 +121,4 @@
   left: 100px;
   bottom: 90px;
 }
+

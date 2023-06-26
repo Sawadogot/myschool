@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/styleC.css">
+    <link rel="stylesheet" href="../style/stylA.css">
     <!-- <link rel="stylesheet" href="../style/bootstrap-5.2.3-dist/css/bootstrap.min.css"> -->
     <title>Document</title>
 </head>
@@ -33,6 +33,7 @@
       <input name="" type="password" required>
       <label>Mot de passe</label>
     </div>
+    <center>
     <a href="pageadmin.php">
       <span></span>
       <span></span>
@@ -40,8 +41,8 @@
       <span></span>
       Inscrire
     </a>
+    </center>
   </form>
-  <p>Don't have an account? <a href="" class="a2">Sign up!</a></p>
 </div>
   
 </body>
